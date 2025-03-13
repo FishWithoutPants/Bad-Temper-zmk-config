@@ -1,33 +1,5 @@
 layers:
   default:
-  - - Q
-    - W
-    - F
-    - P
-    - B
-    - J
-    - L
-    - U
-    - Y
-    - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
-  - - Z
-    - X
-    - C
-    - D
-    - V
-    - K
-    - H
-    - {t: ',', s: <}
-    - {t: ., s: '>'}
-    - /
-  - - ⌘
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: BACKSPACE, s: Alt+BACKSPACE}
-  qwerty:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - A
     - S
@@ -49,111 +21,157 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
-    - '7'
-    - '8'
-    - '9'
-    - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
-    - <
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - '>'
-    - {t: /, s: \}
-    - '1'
-    - '2'
-    - '3'
-    - {t: '=', s: +}
-  - - {t: ▽, type: trans}
+  - [CAPS, SPACE, nav, sym, ⇧, alt]
+  gaming:
+  - [↹, Q, X, E, R, '', '', ↑, '', ↹]
+  - [⇧, A, W, D, F, '', ←, ↓, →, ⇧]
+  - [⌃, Z, S, C, V, '', '', '', '', ⌃]
+  - - ⎇
+    - SPACE
+    - gamefunc
+    - {t: default, h: toggle}
+    - SPACE
+    - PSCRN
+  gamefunc:
+  - ['5', '1', '2', '3', '4', '', '', '', '', '']
+  - ['0', '6', '7', '8', '9', '', '', '', '', '']
+  - [G, J, I, M, T, '', '', '', '', '']
+  - - ESC
+    - ENTER
     - {type: held}
-    - {t: ▽, type: trans}
-    - '0'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - HOME
-    - END
-    - ↹
-    - {t: BACKSPACE, s: Alt+BACKSPACE}
-  - - {t: ⇧, h: sticky}
+    - ''
+    - ''
+    - ''
+  sym:
+  - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+  - - {t: ;, s: ':'}
+    - {t: AltGr+`, s: AltGr+~}
+    - {t: '`', s: '~'}
+    - {t: Sft+`, s: Sft+~}
+    - {t: '-', s: _}
+    - +
+    - {t: LSHIFT, h: sticky}
     - {t: ⌃, h: sticky}
     - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
-    - ↹
+    - {t: LWIN, h: sticky}
+  - - AltGr+\
+    - Sft+AltGr+\
+    - {t: 'Sft+[', s: 'Sft+{'}
+    - {t: '[', s: '{'}
+    - {t: Sft+-, s: Sft+_}
+    - {t: '=', s: +}
+    - {t: ']', s: '}'}
+    - {t: 'Sft+]', s: 'Sft+}'}
+    - Sft+\
+    - \
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  alt:
+  - [AltGr+Q, AltGr+W, AltGr+E, AltGr+R, AltGr+T, AltGr+Y, AltGr+U, AltGr+I, AltGr+O, AltGr+P]
+  - - AltGr+A
+    - AltGr+S
+    - AltGr+D
+    - AltGr+F
+    - AltGr+G
+    - AltGr+H
+    - AltGr+J
+    - AltGr+K
+    - AltGr+L
+    - {t: AltGr+;, s: 'AltGr+:'}
+  - - AltGr+Z
+    - AltGr+X
+    - AltGr+C
+    - AltGr+V
+    - AltGr+B
+    - AltGr+N
+    - AltGr+M
+    - {t: 'AltGr+,', s: AltGr+<}
+    - {t: AltGr+., s: AltGr+>}
+    - AltGr+/
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - RALT(SPACE)
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+  nav:
+  - [⌃↹, Alt+↹, Ctl+Sft+↹, ⌃↹, ESC, ESC, HOME, END, BSPC, DEL]
+  - - {t: LWIN, h: sticky}
+    - {t: ⎇, h: sticky}
+    - {t: ⌃, h: sticky}
+    - {t: LSHIFT, h: sticky}
+    - ENTER
+    - ENTER
     - ←
     - ↓
     - ↑
     - →
-    - {t: ESC, s: '`'}
+  - - Ctl+Gui+←
+    - Ctl+Gui+→
+    - {t: gaming, h: toggle}
+    - PSCRN
+    - ↹
+    - ↹
+    - PG UP
+    - PG DN
+    - ''''
+    - LNLCK
   - - {t: ▽, type: trans}
-    - DEL
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - RET
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - cmd
     - {type: held}
     - {t: ▽, type: trans}
-  fun:
-  - - {t: qwerty, h: toggle}
-    - MUTE
-    - VOL DN
-    - VOL UP
-    - OUT TOG
     - {t: ▽, type: trans}
-    - F7
-    - F8
-    - F9
-    - F12
-  - - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
     - {t: ▽, type: trans}
-    - F4
-    - F5
-    - F6
-    - F11
-  - - BT CLR
+  cmd:
+  - [Meh+Q, Meh+W, Meh+E, Meh+R, Meh+T, Meh+Y, VOL DN, 'VOL
+
+      MUTE', VOL UP, Meh+P]
+  - - Meh+A
+    - Meh+S
+    - Meh+D
+    - Meh+F
+    - Meh+G
+    - Meh+H
     - PREV
     - PP
     - NEXT
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - F1
-    - F2
-    - F3
-    - F10
+    - {t: Meh+;, s: 'Meh+:'}
+  - - Meh+Z
+    - Meh+X
+    - Meh+C
+    - Meh+V
+    - Meh+B
+    - Meh+N
+    - Meh+M
+    - {t: 'Meh+,', s: Meh+<}
+    - {t: Meh+., s: Meh+>}
+    - Meh+/
   - - {t: ▽, type: trans}
     - {type: held}
+    - {type: held}
+    - LWIN
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  num:
+  - [KP 1, KP 2, KP 3, KP 4, KP 5, KP 6, KP 7, KP 8, KP 9, KP 0]
+  - - {t: LWIN, h: sticky}
+    - {t: ⎇, h: sticky}
+    - {t: ⌃, h: sticky}
+    - {t: LSHIFT, h: sticky}
+    - F11
+    - F12
+    - {t: LSHIFT, h: sticky}
+    - {t: ⌃, h: sticky}
+    - {t: ⎇, h: sticky}
+    - {t: LWIN, h: sticky}
+  - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10]
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
+    - {t: '0', type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
