@@ -22,8 +22,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <NUM NAV>;
-            then-layer = <FUN>;
+            if-layers = <SYM NAV>;
+            then-layer = <NUM>;
         };
     };
     behaviors {
@@ -89,7 +89,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M      &kp COMMA       &kp DOT       &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp CAPS      &mo NAV      &kp SPACE         &kp LSHFT      &mo SYM       &mo ALT
+                                   &kp CAPS     &kp SPACE      &mo NAV           &mo SYM       &kp LSHFT    &mo ALT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
