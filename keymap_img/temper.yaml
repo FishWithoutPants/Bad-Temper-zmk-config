@@ -94,7 +94,7 @@ layers:
     - AltGr+/
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - RALT(SPACE)
+    - AltGr+SPACE
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
@@ -172,6 +172,6 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
-    - {t: '0', type: held}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
