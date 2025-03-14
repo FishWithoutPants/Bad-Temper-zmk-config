@@ -119,7 +119,7 @@ layers:
     - PG UP
     - PG DN
     - ''''
-    - LNLCK
+    - KP NUMLOCK
   - - {t: ▽, type: trans}
     - cmd
     - {type: held}
