@@ -72,26 +72,26 @@ layers:
     - {t: ▽, type: trans}
   alt:
   - [AltGr+Q, AltGr+W, AltGr+E, AltGr+R, AltGr+T, AltGr+Y, AltGr+U, AltGr+I, AltGr+O, AltGr+P]
-  - - AltGr+A
-    - AltGr+S
+  - - AltGr+O
+    - AltGr+P
     - AltGr+D
-    - AltGr+F
+    - {t: LSHIFT, h: sticky}
     - AltGr+G
     - AltGr+H
-    - AltGr+J
+    - {t: LSHIFT, h: sticky}
     - AltGr+K
-    - AltGr+L
+    - {t: AltGr+., s: AltGr+>}
+    - AltGr+/
+  - - AltGr+L
     - {t: AltGr+;, s: 'AltGr+:'}
-  - - AltGr+Z
-    - AltGr+X
     - AltGr+C
     - AltGr+V
     - AltGr+B
     - AltGr+N
     - AltGr+M
     - {t: 'AltGr+,', s: AltGr+<}
-    - {t: AltGr+., s: AltGr+>}
-    - AltGr+/
+    - {t: Sft+AltGr+., s: Sft+AltGr+>}
+    - Sft+AltGr+/
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - AltGr+SPACE
