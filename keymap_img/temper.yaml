@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: temper}
 layers:
   default:
   - [Q, W, E, R, T, Y, U, I, O, P]
@@ -21,11 +22,20 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - [CAPS, SPACE, nav, sym, ⇧, alt]
+  - [CAPS, SPACE, alt, rpgmaker, ⇧, sym]
   gaming:
-  - [↹, Q, X, E, R, '', '', ↑, '', ↹]
-  - [⇧, A, W, D, F, '', ←, ↓, →, ⇧]
-  - [⌃, Z, S, C, V, '', '', '', '', ⌃]
+  - - ↹
+    - Q
+    - X
+    - E
+    - R
+    - {t: num, h: toggle}
+    - ''
+    - ''
+    - ''
+    - ↹
+  - [⇧, A, W, D, F, '', ←, ↑, →, ⇧]
+  - [⌃, Z, S, C, V, '', '', ↓, '', ⌃]
   - - ⎇
     - SPACE
     - gamefunc
@@ -40,6 +50,16 @@ layers:
     - ENTER
     - {type: held}
     - ''
+    - ''
+    - ''
+  rpgmaker:
+  - [↹, Z, X, C, V, '', '', '', '', '']
+  - [⇧, ←, ↑, →, F, '', '', '', '', '']
+  - [⌃, J, ↓, M, T, '', '', '', '', '']
+  - - ESC
+    - ENTER
+    - {t: ▽, type: trans}
+    - {t: default, h: toggle, type: held}
     - ''
     - ''
   sym:
@@ -67,9 +87,9 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
   alt:
   - [AltGr+Q, AltGr+W, AltGr+E, AltGr+R, AltGr+T, AltGr+Y, AltGr+U, AltGr+I, AltGr+O, AltGr+P]
   - - AltGr+O
@@ -94,10 +114,10 @@ layers:
     - Sft+AltGr+/
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - AltGr+SPACE
+    - {t: AltGr+SPACE, type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {type: held}
+    - {t: ▽, type: trans}
   nav:
   - [⌃↹, Alt+↹, Ctl+Sft+↹, ⌃↹, ESC, ESC, HOME, END, BSPC, DEL]
   - - {t: LWIN, h: sticky}
@@ -121,13 +141,13 @@ layers:
     - ''''
     - KP NUMLOCK
   - - {t: ▽, type: trans}
-    - cmd
-    - {type: held}
+    - nav
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   cmd:
-  - [Meh+Q, Meh+W, Meh+E, Meh+R, Meh+T, Meh+Y, VOL DN, 'VOL
+  - [Meh+Q, Meh+W, Meh+E, BSPC, DEL, Meh+Y, VOL DN, 'VOL
 
       MUTE', VOL UP, Meh+P]
   - - Meh+A
@@ -151,9 +171,9 @@ layers:
     - {t: Meh+., s: Meh+>}
     - Meh+/
   - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {type: held}
-    - {type: held}
-    - LWIN
+    - {t: LWIN, type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   num:
@@ -171,7 +191,7 @@ layers:
   - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {type: held}
-    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
