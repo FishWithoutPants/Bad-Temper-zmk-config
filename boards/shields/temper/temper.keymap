@@ -12,12 +12,12 @@
 #define DEFAULT 0
 #define GAM 1
 #define GFN 2
-#define SYM 3
-#define ALT 4
-#define NAV 5
-#define CMD 6
-#define NUM 7
-#define RPGM 8
+#define RPGM 3
+#define SYM 4
+#define ALT 5
+#define NAV 6
+#define CMD 7
+#define NUM 8
 
 / {
     conditional_layers {
