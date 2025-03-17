@@ -10,4 +10,4 @@ Some notes about this config:
 - Navigation layer has vim-like arrow keys
 
 ![Temper Keymap](keymap_img/temper.svg)
-![Top view](https://github.com/essFitt/Bad-Temper/blob/main/images/IMG_2160.jp
+![Top view](https://github.com/essFitt/Bad-Temper/blob/main/images/IMG_2160.jpg)
