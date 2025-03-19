@@ -1,4 +1,5 @@
-My adaptation of [Wellum layout](https://github.com/braindefender/wellum) for [Bad Temper ZMK firmware](https://github.com/essFitt/Bad-Temper). 
+### My adaptation of [Wellum layout](https://github.com/braindefender/wellum) for [Bad Temper ZMK firmware](https://github.com/essFitt/Bad-Temper). 
+### Don't take the drawings too seriously, the real purpose of half of the buttons is hidden because of the [universal layout](https://github.com/braindefender/universal-layout) used for [wellum](https://github.com/braindefender/wellum/blob/master/for-36-keys.md)
 
 # Bad Temper ZMK Config
 
