@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: temper}
 layers:
-  default:
+  Default:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - A
     - S
@@ -22,14 +22,14 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - [CAPS, SPACE, nav, sym, ⇧, alt]
-  gaming:
+  - [CAPS, SPACE, Nav, Sym, ⇧, Alt]
+  Gaming:
   - - ↹
     - Q
     - X
     - E
     - R
-    - {t: rpgmaker, h: toggle}
+    - {t: RPGMaker, h: toggle}
     - ''
     - ''
     - ''
@@ -38,11 +38,11 @@ layers:
   - [⌃, Z, S, C, V, '', '', ↓, '', ⌃]
   - - ⎇
     - SPACE
-    - gamefunc
-    - {t: default, h: toggle}
+    - Gamefunc
+    - {t: Default, h: toggle}
     - SPACE
     - PSCRN
-  gamefunc:
+  Gamefunc:
   - ['5', '1', '2', '3', '4', '', '', '', '', '']
   - ['0', '6', '7', '8', '9', '', '', '', '', '']
   - [G, J, I, M, T, '', '', '', '', '']
@@ -52,17 +52,17 @@ layers:
     - ''
     - ''
     - ''
-  rpgmaker:
+  RPGMaker:
   - [↹, Z, X, C, V, '', '', '', '', '']
   - [⇧, ←, ↑, →, F, '', '', '', '', '']
   - [⌃, J, ↓, M, T, '', '', '', '', '']
   - - ESC
     - ENTER
     - {t: ▽, type: trans}
-    - {t: default, h: toggle}
+    - {t: Default, h: toggle}
     - ''
     - ''
-  sym:
+  Sym:
   - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
   - - {t: ;, s: ':'}
     - {t: AltGr+`, s: AltGr+~}
@@ -90,7 +90,7 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  alt:
+  Alt:
   - [AltGr+Q, AltGr+W, AltGr+E, AltGr+R, AltGr+T, AltGr+Y, AltGr+U, AltGr+I, AltGr+O, AltGr+P]
   - - AltGr+O
     - AltGr+P
@@ -118,7 +118,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
-  nav:
+  Nav:
   - [⌃↹, Alt+↹, Ctl+Sft+↹, ⌃↹, ESC, ESC, HOME, END, BSPC, DEL]
   - - {t: LWIN, h: sticky}
     - {t: ⎇, h: sticky}
@@ -132,7 +132,7 @@ layers:
     - →
   - - Ctl+Gui+←
     - Ctl+Gui+→
-    - {t: gaming, h: toggle}
+    - {t: Gaming, h: toggle}
     - PSCRN
     - ↹
     - ↹
@@ -141,12 +141,12 @@ layers:
     - ''''
     - KP NUMLOCK
   - - {t: ▽, type: trans}
-    - cmd
+    - Macros
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  cmd:
+  Macros:
   - [Meh+Q, Meh+W, Meh+E, BSPC, DEL, Meh+Y, VOL DN, 'VOL
 
       MUTE', VOL UP, Meh+P]
@@ -176,7 +176,7 @@ layers:
     - LWIN
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  num:
+  Num:
   - [KP 1, KP 2, KP 3, KP 4, KP 5, KP 6, KP 7, KP 8, KP 9, KP 0]
   - - {t: LWIN, h: sticky}
     - {t: ⎇, h: sticky}
