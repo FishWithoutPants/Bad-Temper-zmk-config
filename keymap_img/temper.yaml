@@ -150,11 +150,11 @@ layers:
   - [Meh+Q, Meh+W, Meh+E, BSPC, DEL, Meh+Y, VOL DN, 'VOL
 
       MUTE', VOL UP, Meh+P]
-  - - Meh+A
-    - Meh+S
-    - Meh+D
-    - Meh+F
-    - Meh+G
+  - - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
     - Meh+H
     - PREV
     - PP
