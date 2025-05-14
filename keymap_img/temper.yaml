@@ -22,7 +22,7 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - [CAPS, SPACE, Nav, Sym, ⇧, Alt]
+  - [CAPS, SPACE, Nav, Sym, ⇧, Alt/Cmd]
   Gaming:
   - - ↹
     - Q
@@ -90,34 +90,6 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  Alt:
-  - [AltGr+Q, AltGr+W, AltGr+E, AltGr+R, AltGr+T, AltGr+Y, AltGr+U, AltGr+I, AltGr+O, AltGr+P]
-  - - AltGr+O
-    - AltGr+P
-    - AltGr+D
-    - {t: LSHIFT, h: sticky}
-    - AltGr+G
-    - AltGr+H
-    - {t: LSHIFT, h: sticky}
-    - AltGr+K
-    - {t: AltGr+., s: AltGr+>}
-    - AltGr+/
-  - - AltGr+L
-    - {t: AltGr+;, s: 'AltGr+:'}
-    - AltGr+C
-    - AltGr+V
-    - AltGr+B
-    - AltGr+N
-    - AltGr+M
-    - {t: 'AltGr+,', s: AltGr+<}
-    - {t: Sft+AltGr+., s: Sft+AltGr+>}
-    - Sft+AltGr+/
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - AltGr+SPACE
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
   Nav:
   - [⌃↹, Alt+↹, Ctl+Sft+↹, ⌃↹, ESC, ESC, HOME, END, BSPC, DEL]
   - - {t: LWIN, h: sticky}
@@ -141,41 +113,39 @@ layers:
     - ''''
     - KP NUMLOCK
   - - {t: ▽, type: trans}
-    - Macros
+    - Alt/Cmd
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  Macros:
-  - [Meh+Q, Meh+W, Meh+E, BSPC, DEL, Meh+Y, VOL DN, 'VOL
-
-      MUTE', VOL UP, Meh+P]
+  Alt/Cmd:
+  - [Meh+Q, Meh+W, Meh+E, BSPC, AltGr+T, Meh+Y, VOL DN, AltGr+I, AltGr+O, AltGr+P]
   - - {t: BT, h: '0'}
     - {t: BT, h: '1'}
     - {t: BT, h: '2'}
     - {t: BT, h: '3'}
     - {t: BT, h: '4'}
     - Meh+H
-    - PREV
-    - PP
-    - NEXT
-    - {t: Meh+;, s: 'Meh+:'}
+    - {t: LSHIFT, h: sticky}
+    - AltGr+K
+    - {t: AltGr+., s: AltGr+>}
+    - AltGr+/
   - - Meh+Z
     - Meh+X
     - Meh+C
     - Meh+V
     - Meh+B
     - Meh+N
-    - Meh+M
-    - {t: 'Meh+,', s: Meh+<}
-    - {t: Meh+., s: Meh+>}
-    - Meh+/
+    - AltGr+M
+    - {t: 'AltGr+,', s: AltGr+<}
+    - {t: Sft+AltGr+., s: Sft+AltGr+>}
+    - Sft+AltGr+/
   - - {t: ▽, type: trans}
-    - {type: held}
-    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - LWIN
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
   Num:
   - [KP 1, KP 2, KP 3, KP 4, KP 5, KP 6, KP 7, KP 8, KP 9, KP 0]
   - - {t: LWIN, h: sticky}
