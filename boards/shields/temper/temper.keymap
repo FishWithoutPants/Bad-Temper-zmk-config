@@ -14,10 +14,9 @@
 #define GFN 2
 #define RPGM 3
 #define SYM 4
-#define ALT 5
-#define NAV 6
-#define CMD 7
-#define NUM 8
+#define NAV 5
+#define ALTCMD 6
+#define NUM 7
 
 / {
     conditional_layers {
@@ -91,7 +90,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M      &kp COMMA       &kp DOT       &kp FSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp CAPS     &kp SPACE      &mo NAV           &mo SYM       &kp LSHFT    &mo ALT
+                                   &kp CAPS     &kp SPACE      &mo NAV           &mo SYM       &kp LSHFT    &mo ALTCMD
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -153,21 +152,6 @@
                         >;
                 };
 
-                alt_layer {
-                        label = "Alt";
-                        bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp RA(Q)     &kp RA(W)     &kp RA(E)     &kp RA(R)     &kp RA(T)         &kp RA(Y)     &kp RA(U)     &kp RA(I)     &kp RA(O)     &kp RA(P)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp RA(O)     &kp RA(P)     &kp RA(D)     &sk LSHIFT    &kp RA(G)         &kp RA(H)    &sk LSHIFT     &kp RA(K)    &kp RA(DOT)    &kp RA(FSLH)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp RA(L)   &kp RA(SEMI)    &kp RA(C)     &kp RA(V)     &kp RA(B)         &kp RA(N)     &kp RA(M)   &kp RA(COMMA)  &kp LS(RA(DOT))   &kp LS(RA(FSLH))
-// ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                    &trans      &trans     &kp RA(SPACE)       &trans        &trans        &trans
-//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-                        >;
-                };
-
                 nav_layer {
                         label = "Nav";
                         bindings = <
@@ -178,20 +162,20 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
    &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &to GAM    &kp PSCRN      &kp TAB           &kp TAB     &kp PG_UP     &kp PG_DN     &kp SQT     &kp KP_NUMLOCK
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                    &trans       &mo CMD        &trans            &trans        &trans        &trans
+                                    &trans     &mo ALTCMD        &trans            &trans        &trans        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
 
-                cmd_layer {
-                        label = "Macros";
+                altcmd_layer {
+                        label = "Alt/Cmd";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&kp LC(LS(LA(Q))) &kp LC(LS(LA(W))) &kp LC(LS(LA(E))) &kp BSPC &kp DEL &kp LC(LS(LA(Y))) &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &kp LC(LS(LA(P)))
+&kp LC(LS(LA(Q))) &kp LC(LS(LA(W))) &kp LC(LS(LA(E))) &kp BSPC &kp RA(T)     &kp LC(LS(LA(Y))) &kp C_VOL_DN &kp RA(I)    &kp RA(O)     &kp RA(P)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LC(LS(LA(H))) &kp C_PREV &kp C_PP &kp C_NEXT &kp LC(LS(LA(SEMI)))
+     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LC(LS(LA(H))) &sk LSHIFT    &kp RA(K)    &kp RA(DOT)    &kp RA(FSLH)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&kp LC(LS(LA(Z))) &kp LC(LS(LA(X))) &kp LC(LS(LA(C))) &kp LC(LS(LA(V))) &kp LC(LS(LA(B))) &kp LC(LS(LA(N))) &kp LC(LS(LA(M))) &kp LC(LS(LA(COMMA))) &kp LC(LS(LA(DOT))) &kp LC(LS(LA(FSLH)))
+&kp LC(LS(LA(Z))) &kp LC(LS(LA(X))) &kp LC(LS(LA(C))) &kp LC(LS(LA(V))) &kp LC(LS(LA(B))) &kp LC(LS(LA(N))) &kp RA(M) &kp RA(COMMA)  &kp LS(RA(DOT))   &kp LS(RA(FSLH))
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     &trans        &trans        &trans          &kp LWIN        &trans        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
