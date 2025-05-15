@@ -119,7 +119,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Alt/Cmd:
-  - [Meh+Q, Meh+W, Meh+E, BSPC, AltGr+T, Meh+Y, VOL DN, AltGr+I, AltGr+O, AltGr+P]
+  - [Meh+Q, Meh+W, BSPC, DEL, AltGr+T, Meh+Y, Meh+U, AltGr+I, AltGr+O, AltGr+P]
   - - Meh+A
     - Meh+S
     - Meh+D
