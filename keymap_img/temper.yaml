@@ -120,21 +120,21 @@ layers:
     - {t: ▽, type: trans}
   Alt/Cmd:
   - [Meh+Q, Meh+W, Meh+E, BSPC, AltGr+T, Meh+Y, VOL DN, AltGr+I, AltGr+O, AltGr+P]
-  - - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
+  - - Meh+A
+    - Meh+S
+    - Meh+D
+    - Meh+F
+    - Meh+G
     - Meh+H
     - {t: LSHIFT, h: sticky}
     - AltGr+K
     - {t: AltGr+., s: AltGr+>}
     - AltGr+/
-  - - Meh+Z
-    - Meh+X
-    - Meh+C
-    - Meh+V
-    - Meh+B
+  - - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
     - Meh+N
     - AltGr+M
     - {t: 'AltGr+,', s: AltGr+<}
