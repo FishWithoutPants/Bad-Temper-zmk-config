@@ -33,7 +33,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - trans
+    - {t: ▽, type: trans}
   - - ⇧
     - A
     - W
@@ -43,7 +43,7 @@ layers:
     - ←
     - ↑
     - →
-    - trans
+    - {t: ▽, type: trans}
   - - ⌃
     - Z
     - S
@@ -53,7 +53,7 @@ layers:
     - {t: ▽, type: trans}
     - ↓
     - {t: ▽, type: trans}
-    - trans
+    - {t: ▽, type: trans}
   - - ⎇
     - SPACE
     - Gamefunc
@@ -95,8 +95,8 @@ layers:
     - ENTER
     - {type: held}
     - ''
-    - ''
-    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   RPGMaker:
   - - ↹
     - Z
