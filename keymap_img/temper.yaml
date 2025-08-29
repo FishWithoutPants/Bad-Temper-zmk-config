@@ -22,7 +22,7 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - [CAPS, SPACE, Nav, Sym, ⇧, Alt/Cmd]
+  - [Sft+⎇, SPACE, Nav, Sym, ⇧, Alt/Cmd]
   Gaming:
   - - ↹
     - Q
