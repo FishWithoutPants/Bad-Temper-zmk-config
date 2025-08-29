@@ -30,12 +30,30 @@ layers:
     - E
     - R
     - {t: RPGMaker, h: toggle}
-    - ''
-    - ''
-    - ''
-    - ↹
-  - [⇧, A, W, D, F, '', ←, ↑, →, ⇧]
-  - [⌃, Z, S, C, V, '', '', ↓, '', ⌃]
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - trans
+  - - ⇧
+    - A
+    - W
+    - D
+    - F
+    - {t: ▽, type: trans}
+    - ←
+    - ↑
+    - →
+    - trans
+  - - ⌃
+    - Z
+    - S
+    - C
+    - V
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ↓
+    - {t: ▽, type: trans}
+    - trans
   - - ⎇
     - SPACE
     - Gamefunc
@@ -43,9 +61,36 @@ layers:
     - SPACE
     - PSCRN
   Gamefunc:
-  - ['5', '1', '2', '3', '4', '', '', '', '', '']
-  - ['0', '6', '7', '8', '9', '', '', '', '', '']
-  - [G, J, I, M, T, '', '', '', '', '']
+  - - '5'
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - '0'
+    - '6'
+    - '7'
+    - '8'
+    - '9'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - G
+    - J
+    - I
+    - M
+    - T
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - ESC
     - ENTER
     - {type: held}
@@ -53,9 +98,36 @@ layers:
     - ''
     - ''
   RPGMaker:
-  - [↹, Z, X, C, V, '', '', '', '', '']
-  - [⇧, ←, ↑, →, F, '', '', '', '', '']
-  - [⌃, J, ↓, M, T, '', '', '', '', '']
+  - - ↹
+    - Z
+    - X
+    - C
+    - V
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - ⇧
+    - ←
+    - ↑
+    - →
+    - F
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - ⌃
+    - J
+    - ↓
+    - M
+    - T
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - ESC
     - ENTER
     - {t: ▽, type: trans}
@@ -63,7 +135,7 @@ layers:
     - ''
     - ''
   Sym:
-  - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+  - [Sft+1, Sft+2, Sft+3, Sft+4, Sft+5, Sft+6, Sft+7, Sft+8, Sft+9, Sft+0]
   - - {t: ;, s: ':'}
     - {t: AltGr+`, s: AltGr+~}
     - {t: '`', s: '~'}
@@ -147,7 +219,7 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
   Num:
-  - [KP 1, KP 2, KP 3, KP 4, KP 5, KP 6, KP 7, KP 8, KP 9, KP 0]
+  - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
   - - {t: LWIN, h: sticky}
     - {t: ⎇, h: sticky}
     - {t: ⌃, h: sticky}
